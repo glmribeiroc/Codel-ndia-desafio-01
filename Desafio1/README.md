@@ -10,8 +10,9 @@
 
 This project was developed using the following technologies:
 
-- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element)
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [HTML]
+- [CSS]
+- [JAVASCRIPT]
 
 <br>
 
