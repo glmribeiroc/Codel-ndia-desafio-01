@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link rel="stylesheet" href="styles/responsive.css" type="text/css">
+    <script src="https://kit.fontawesome.com/c907492a0c.js" crossorigin="anonymous"></script>
+    <title>Desafio 01</title>
+</head>
+<body>
+    <header>
+        <div id="container-header">
+            <div class="header-title">
+                <h3>Codelândia</h3>
+                <p>blog</p>
+            </div>
+            <div class="search-header">
+                <form id="searchForm" class="search-form" name="search">
+                    <button form="searchForm"><img src="./images/search-icon.png"></button>
+                    <input type="search" placeholder="Pesquisar no blog">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="cards-container">
+            <div class="card">
+                <div class="small-date">
+                    <small class="date">02 de julho, 2021</small>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <h2>Agora é oficial: o Windows 11 está vindo</h2>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae nesciunt facilis excepturi mollitia harum saepe molestias in, explicabo rem voluptatum vero exercitationem nemo veritatis ducimus esse nihil? Officia, magni!
+                </p>
+            </div>
+            <div class="card">
+                <div class="small-date">
+                    <small class="date">02 de julho, 2021</small>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <h2>Tim Berners-Lee vai leiloar código-fonte da web</h2>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae nesciunt facilis excepturi mollitia harum saepe molestias in, explicabo rem voluptatum vero exercitationem nemo veritatis ducimus esse nihil? Officia, magni!
+                </p>
+            </div>
+            <div class="card">
+                <div class="small-date">
+                    <small class="date">02 de julho, 2021</small>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <h2>Team Firefox novo no pedaço e você vai querer migrar</h2>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae nesciunt facilis excepturi mollitia harum saepe molestias in, explicabo rem voluptatum vero exercitationem nemo veritatis ducimus esse nihil? Officia, magni!
+                </p>
+            </div>
+            <div class="card">
+                <div class="small-date">
+                    <small class="date">02 de julho, 2021</small>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <h2>John McAfee, criador do antivírus McAfee, morre</h2>
+                <p class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae nesciunt facilis excepturi mollitia harum saepe molestias in, explicabo rem voluptatum vero exercitationem nemo veritatis ducimus esse nihil? Officia, magni!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '50px',
+            duration: 900,
+            reset: true
+        });
+        ScrollReveal().reveal('.card', { delay: 100 });
+        ScrollReveal().reveal('.date', { delay: 200 });
+        ScrollReveal().reveal('.title', { delay: 300 });
+        ScrollReveal().reveal('.description', { delay: 400 });
+    </script>
+
+</body>
+</html>

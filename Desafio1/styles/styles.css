@@ -1,0 +1,147 @@
+:root {
+    --blue: #3EA1DB;
+    --blue-dark: #574AE8;
+    --white: #FFF;
+    --white-200: #f3f5f7;
+  
+    --title: #313131;
+    --text: #B6B6B6;
+    
+    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+
+    --title-size: 1.2rem;
+
+    --container-size: 40%;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: var(--linear);
+    width: 100%;
+    height: 14rem;
+}
+
+#container-header {
+    max-width: var(--container-size);
+    margin: 0 auto;
+}
+
+.header-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 1rem;
+}
+
+.header-title h3 {
+    font-weight: 400;
+    font-family: 'Lexenda Deca', sans-serif;
+    font-size: var(--title-size);
+    color: var(--white);
+}
+
+.header-title p {
+    font-family: 'Lexenda Deca', sans-serif;
+    font-size: var(--title-size);
+    color: var(--white);
+}
+
+.search-header {
+    display: flex;
+    padding: 3.5rem 0 2.5rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-form {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem;
+    padding: 0.6rem;
+}
+
+.search-form input {
+    width: 100%;
+    height: 2rem;
+    background: transparent;
+    font-size: 0.7rem;
+    border: 0;
+    padding-left: 0.8rem;
+    outline: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+input::-webkit-input-placeholder {
+    color: var(--text)
+}
+
+.search-form button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0.3rem;
+}
+
+.search-form button img {
+    width: 1.1rem;
+}
+
+#cards-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: var(--container-size);
+    margin: 5rem auto 0;
+}
+
+.card {
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0px 0px 20px 10px #13131F0D;
+    padding: 1.2rem;
+    margin-bottom: 3rem;
+    border-radius: 0.3rem;
+}
+
+.small-date {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.05rem 0 1rem;
+}
+
+.small-date small {
+    color: var(--text);
+    font-family: 'Lexenda Deca', sans-serif;
+    font-weight: 400;
+}
+
+.small-date i {
+    color: var(--blue-dark);
+}
+
+.small-date i:hover {
+    color: #df216a;
+}
+
+.card h2 {
+    color: var(--title);
+    font-size: 1.4rem;
+    font-family: 'Lexenda Deca', sans-serif;
+    font-weight: 600;
+    padding: 0 0 0.5rem;
+}
+
+.card p {
+    font-family: 'Lexenda Deca', sans-serif;
+    font-weight: 400;
+    color: var(--text);
+}
